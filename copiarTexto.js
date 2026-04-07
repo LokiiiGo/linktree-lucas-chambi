@@ -1,7 +1,4 @@
-document.querySelector('footer').innerHTML = `&copy; ${new Date().getFullYear()} - Lucas Chambi`;
-
 function copiarTexto() {
-    // captura o elemento pelo ID
     const elemento = document.getElementById("lokiiiGo");
 
     // pega o texto de dentro do elemento
