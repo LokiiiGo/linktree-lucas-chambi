@@ -1,5 +1,5 @@
 html {
-    scrollbar-color: #7f009f black;
+    scrollbar-color: #6e00a0 black;
 }
 
 .figtree {
@@ -8,7 +8,7 @@ html {
 
 /* Animação do Background */
 .bg-animated {
-    background: linear-gradient(-45deg, #000000, #740083, #51007d, #540081);
+    background: linear-gradient(-45deg, #000000, #620090, #651490, #430067);
     background-size: 400% 400%;
     animation: gradient 20s ease infinite;
 }
