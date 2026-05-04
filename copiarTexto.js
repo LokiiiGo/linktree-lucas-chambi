@@ -1,5 +1,5 @@
 function copiarTexto() {
-    const elemento = document.getElementById("lokiiiGo");
+    const elemento = document.getElementById("lokiiiChr");
 
     // pega o texto de dentro do elemento
     const texto = elemento.innerText;
