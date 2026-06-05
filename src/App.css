@@ -1,5 +1,7 @@
+@import "tailwindcss";
+
 html {
-    scrollbar-color: #6e00a0 black;
+    scrollbar-color: #007da0 black;
 }
 
 .figtree {
@@ -8,7 +10,7 @@ html {
 
 /* Animação do Background */
 .bg-animated {
-    background: linear-gradient(-45deg, #000000, #620090, #651490, #430067);
+    background: linear-gradient(-45deg, #000000, #0e8ab3, #11669a);
     background-size: 400% 400%;
     animation: gradient 20s ease infinite;
 }
@@ -27,7 +29,7 @@ html {
     }
 }
 
-/* Partículas flutuantes sutis */
+/* Partículas flutuantes sutis 
 .circles {
     position: absolute;
     top: 0;
@@ -63,3 +65,4 @@ html {
         border-radius: 50%;
     }
 }
+*/
