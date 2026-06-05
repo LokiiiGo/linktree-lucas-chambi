@@ -1,0 +1,12 @@
+[
+    {
+        "titulo": "Twitter",
+        "linkUrl": "https://twitter.com/SteaEsports",
+        "icon": "bi bi-twitter-x"
+    },
+    {
+        "titulo": "Discord",
+        "linkUrl": "https://discord.gg/dgWWEvJaHd",
+        "icon": "bi bi-discord"
+    }
+]

@@ -1,17 +1,6 @@
-function LinksSt() {
-    const linksSt = [
-        {
-            titulo: "Twitter",
-            linkUrl: "https://twitter.com/SteaEsports",
-            icon: "bi bi-twitter-x"
-        },
-        {
-            titulo: "Discord",
-            linkUrl: "https://discord.gg/dgWWEvJaHd",
-            icon: "bi bi-discord"
-        }
-    ]
+import linksSt from '../data/linksSt.json';
 
+function LinksSt() {
     return (
         <>
             <p className="font-bold text-white text-lg mb-4 italic mt-10">Strawberry Tea - Organização de Brawlhalla</p>

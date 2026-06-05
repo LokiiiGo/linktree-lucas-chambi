@@ -1,26 +1,6 @@
+import links from '../data/links.json';
+
 function Links() {
-    const links = [
-        {
-            titulo: "Github",
-            linkUrl: "https://github.com/LokiiiGo",
-            icon: "bi bi-github"
-        },
-        {
-            titulo: "Twitter",
-            linkUrl: "https://twitter.com/LokiiiGo",
-            icon: "bi bi-twitter-x"
-        },
-        {
-            titulo: "Instagram",
-            linkUrl: "https://www.instagram.com/lokiii.chr/",
-            icon: "bi bi-instagram"
-        },
-        {
-            titulo: "Steam",
-            linkUrl: "https://steamcommunity.com/id/lokiiibh/",
-            icon: "bi bi-steam"
-        },
-    ]
 
     const copiarTexto = () => {
         const elemento = document.getElementById("lokiiiChr");
