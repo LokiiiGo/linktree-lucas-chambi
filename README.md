@@ -16,15 +16,16 @@ Este projeto é uma **landing page estilo Linktree** para reunir links de redes 
 
 ## 2. Estrutura do repositório
 
-- `teste.html` — página principal
-- `css/linktree.css` — estilos customizados (gradiente animado e fonte)
+- `index.html` — página principal
+- `css/linktree.css` — estilos customizados (gradiente animado, tipografia e toast)
 - `js/copiarTexto.js` — lógica do botão que copia texto
-- `image/photo-willow.png` — imagem do avatar
+- `js/particulas.js` — configuração do particles.js (efeito de partículas)
+- `image/willow-photo.png` — imagem do avatar
 - `README.md` — descrição curta do projeto
 
 ---
 
-## 3. Como a página é montada (teste.html)
+## 3. Como a página é montada (index.html)
 
 ### 3.1 Head (dependências)
 A página carrega:
@@ -32,27 +33,25 @@ A página carrega:
 - **Google Fonts** (família **Figtree**)
 - **Tailwind CSS via CDN**
 - `./css/linktree.css` (CSS local)
-- `js/copiarTexto.js` (script local)
+- `./js/particulas.js` e `./js/copiarTexto.js` (scripts locais)
 
 ### 3.2 Corpo (layout)
 A página é centralizada e responsiva, com:
-- Avatar (imagem em `./image/photo-willow.png`)
-- Título e subtítulo (nome e descrição)
-- Um bloco com botões/links (estilo “card”)
-- Um botão que copia um texto específico (`lokiii.chr`)
-- Um bloco final com links adicionais
-- Footer com ano automático via script embutido
+- Avatar (`./image/willow-photo.png`)
+- Título e subtítulo
+- Bloco de links estilo “card”
+- Botão que copia `lokiii.chr` para a área de transferência (toast de feedback)
+- Bloco final com links adicionais
+- Footer com ano automático
 
 ---
 
 ## 4. CSS customizado (css/linktree.css)
 
 Principais regras:
-
 - `.figtree` define a fonte **Figtree** para a página.
 - `.bg-animated` cria um **background em gradiente** com animação contínua.
-
-(Existe uma animação de partículas comentada no arquivo, mas não está ativa.)
+- Toast visual para feedback do botão de copiar.
 
 ---
 
@@ -60,7 +59,7 @@ Principais regras:
 
 A função `copiarTexto`:
 1. Localiza o elemento com `id="lokiiiChr"`
-2. Lê o texto exibido (`innerText`)
+2. Obtém o texto a ser copiado via `data-copy` (em vez de ler `innerText`)
 3. Copia para a área de transferência com `navigator.clipboard.writeText(texto)`
-4. Mostra um `alert()` confirmando o conteúdo copiado
+4. Mostra um **toast** confirmando o conteúdo copiado
 5. Registra erros no console caso a cópia falhe

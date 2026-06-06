@@ -18,7 +18,7 @@ function mostrarToast(mensagem) {
     }, 2200);
 }
 
-// Copia o usuário do Discord para a área de transferência
+// Copia o usuário do Discord (definido em data-copy) para a área de transferência
 function copiarTexto() {
     const elemento = document.getElementById("lokiiiChr");
     const texto = elemento?.dataset.copy?.trim() ?? "";
