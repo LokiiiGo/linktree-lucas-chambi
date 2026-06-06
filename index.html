@@ -5,74 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linktree - Lucas Chambi</title>
-    <link rel="icon" type="apple-touch-icon" href="./image/willow-photo.png" />
+    <meta name="description"
+        content="Links do Lokiii - Freelancer Web e fã de Fighting Games. GitHub, Twitter, Instagram, Steam e Discord.">
+    <link rel="icon" type="image/png" href="./image/willow-photo.png" />
 
-    <!-- utilizando ícones do framework Bootstrap  -->
+    <!-- ícones do Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
 
-    <!-- usando fonte de letra Figtree do Google Fonts-->
+    <!-- fonte Figtree do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="./css/linktree.css">
-    <script src="js/copiarTexto.js" defer></script>
 
-    <!-- utilizando Tailwind CSS via CDN -->
+    <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+    <script src="./js/particulas.js" defer></script>
+
+    <!-- script de copiar -->
+    <script src="./js/copiarTexto.js" defer></script>
 </head>
 
 <body class="bg-animated text-center figtree min-h-screen flex flex-col items-center p-1 relative overflow-x-hidden">
-    <main class="w-full max-w-sm md:max-w-md lg:max-w-lg z-10">
+
+    <!-- Container das partículas (fica atrás do conteúdo) -->
+    <div id="particles-js" aria-hidden="true"></div>
+
+    <main class="w-full max-w-sm md:max-w-md lg:max-w-lg z-10 animate-fade-up">
 
         <!-- Foto de perfil -->
         <div class="relative inline-block mt-8 mb-4">
             <div class="absolute -inset-1 bg-white blur opacity-30 animate-pulse rounded-full"></div>
-            <img src="./image/willow-photo.png" alt="Poppy"
-                class="relative mx-auto w-35 h-35 object-cover rounded-full border-2 border-white shadow-3xl"
-                loading="lazy">
+            <img src="./image/willow-photo.png" alt="Foto de perfil do Lokiii"
+                class="relative mx-auto w-35 h-35 object-cover rounded-full border-2 border-white shadow-2xl"
+                width="140" height="140">
         </div>
 
-        <!-- Quem eu sou-->
+        <!-- Quem eu sou -->
         <h1 class="font-extrabold text-white text-4xl mt-4 mb-1 tracking-wider uppercase">Lokiii</h1>
         <p class="font-light text-white text-lg mb-4 italic">Freelancer Web | Fã de Fighting Games</p>
 
         <hr class="border-t border-white w-1/2 mx-auto mb-6">
-        </hr>
 
         <!-- Links -->
         <div class="flex flex-col items-center space-y-4">
-            <a href="https://github.com/LokiiiGo" target="_blank" rel="noopener noreferrer"
-                class="group w-full max-w-xs flex items-center justify-between bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95">
+            <a href="https://github.com/LokiiiGo" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                class="group w-full max-w-xs flex items-center justify-between gap-2 bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
                 <i class="bi bi-github text-2xl"></i>
                 <span class="grow">GitHub</span>
                 <i class="bi bi-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"></i>
             </a>
 
-            <a href="https://x.com/LokiiiBH" target="_blank" rel="noopener noreferrer"
-                class="group w-full max-w-xs flex items-center justify-between bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95">
+            <a href="https://x.com/LokiiiBH" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
+                class="group w-full max-w-xs flex items-center justify-between gap-2 bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
                 <i class="bi bi-twitter-x text-2xl"></i>
                 <span class="grow">Twitter</span>
                 <i class="bi bi-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"></i>
             </a>
 
-            <a href="https://instagram.com/lokiii.chr" target="_blank" rel="noopener noreferrer"
-                class="group w-full max-w-xs flex items-center justify-between bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95">
+            <a href="https://instagram.com/lokiii.chr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                class="group w-full max-w-xs flex items-center justify-between gap-2 bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
                 <i class="bi bi-instagram text-2xl"></i>
                 <span class="grow">Instagram</span>
                 <i class="bi bi-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"></i>
             </a>
 
             <a href="https://steamcommunity.com/id/lokiiibh/" target="_blank" rel="noopener noreferrer"
-                class="group w-full max-w-xs flex items-center justify-between bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95">
+                aria-label="Steam"
+                class="group w-full max-w-xs flex items-center justify-between gap-2 bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
                 <i class="bi bi-steam text-2xl"></i>
                 <span class="grow">Steam</span>
                 <i class="bi bi-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"></i>
             </a>
 
-            <button id="lokiiiChr" onclick="copiarTexto()"
-                class="group w-full max-w-xs flex items-center justify-between bg-white/10 backdrop-blur-md text-white cursor-pointer font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95">
+            <button id="lokiiiChr" data-copy="lokiii.chr" onclick="copiarTexto()" aria-label="Copiar usuário do Discord"
+                class="group w-full max-w-xs flex items-center justify-between gap-2 bg-white/10 backdrop-blur-md text-white cursor-pointer font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
                 <i class="bi bi-discord text-2xl"></i>
                 <span class="grow">lokiii.chr</span>
                 <i class="bi bi-clipboard opacity-0 group-hover:opacity-100 transition-opacity"></i>
@@ -86,14 +98,16 @@
 
         <div class="flex flex-col items-center space-y-4">
             <a href="https://twitter.com/LokiiiGo" target="_blank" rel="noopener noreferrer"
-                class="group w-full max-w-xs flex items-center justify-between bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95">
+                aria-label="Twitter da Strawberry Tea"
+                class="group w-full max-w-xs flex items-center justify-between gap-2 bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
                 <i class="bi bi-twitter-x text-2xl"></i>
                 <span class="grow">Twitter</span>
                 <i class="bi bi-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"></i>
             </a>
 
             <a href="https://discord.gg/dgWWEvJaHd" target="_blank" rel="noopener noreferrer"
-                class="group w-full max-w-xs flex items-center justify-between bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95">
+                aria-label="Discord da Strawberry Tea"
+                class="group w-full max-w-xs flex items-center justify-between gap-2 bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
                 <i class="bi bi-discord text-2xl"></i>
                 <span class="grow">Discord</span>
                 <i class="bi bi-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"></i>
@@ -101,13 +115,13 @@
         </div>
     </main>
 
-    <!-- Rodapé com script, permitindo que o ano seja automatizado -->
-    <footer class="text-white mt-auto py-6 text-xs tracking-widest uppercase">
-        <script>
-            document.querySelector('footer').innerHTML =
-                `&copy; ${new Date().getFullYear()} - Linktree do Lucas Chambi`;
-        </script>
-    </footer>
+    <!-- Rodapé: o ano é preenchido automaticamente -->
+    <footer class="text-white mt-auto py-6 text-xs tracking-widest uppercase z-10"></footer>
+
+    <script>
+        document.querySelector("footer").innerHTML =
+            `&copy; ${new Date().getFullYear()} - Linktree do Lucas Chambi`;
+    </script>
 </body>
 
 </html>
