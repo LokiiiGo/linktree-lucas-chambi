@@ -1,4 +1,4 @@
-import links from '../data/links.json';
+import { links } from '../data/links.json';
 
 function Links() {
 

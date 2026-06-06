@@ -1,4 +1,4 @@
-import linksSt from '../data/linksSt.json';
+import { linksSt } from '../data/linksSt.json';
 
 function LinksSt() {
     return (
