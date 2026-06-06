@@ -1,31 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="apple-touch-icon" href="./willow-photo.jpg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linktree - Lucas Chambi</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linktree - Lucas Chambi</title>
+    <link rel="icon" type="apple-touch-icon" href="./image/photo-willow.png" />
+
+    <!-- utilizando ícones do framework Bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+
+    <!-- usando fonte de letra Figtree do Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/linktree.css">
+    <script src="js/copiarTexto.js"></script>
+
+    <!-- utilizando Tailwind CSS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body class="bg-animated text-center figtree min-h-screen flex flex-col items-center p-1 relative overflow-x-hidden">
-  <!--
-  <ul class="circles">
-        <li style="left: 25%; width: 80px; height: 80px; animation-delay: 0s;"></li>
-        <li style="left: 10%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 12s;"></li>
-        <li style="left: 70%; width: 20px; height: 20px; animation-delay: 4s;"></li>
-        <li style="left: 40%; width: 60px; height: 60px; animation-delay: 0s; animation-duration: 18s;"></li>
-        <li style="left: 65%; width: 20px; height: 20px; animation-delay: 0s;"></li>
-        <li style="left: 75%; width: 110px; height: 110px; animation-delay: 3s;"></li>
-    </ul>
-  -->
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+    <main class="w-full max-w-sm md:max-w-md lg:max-w-lg z-10">
+
+        <!-- Foto de perfil -->
+        <div class="relative inline-block mt-8 mb-4">
+            <div class="absolute -inset-1 bg-white blur opacity-30 animate-pulse rounded-full"></div>
+            <img src="./image/photo-willow.png" alt="Poppy"
+                class="relative mx-auto w-35 h-35 object-cover rounded-full border-2 border-white shadow-3xl" />
+        </div>
+
+        <!-- Quem eu sou-->
+        <h1 class="font-extrabold text-white text-4xl mt-4 mb-1 tracking-wider uppercase">Lokiii</h1>
+        <p class="font-light text-white text-lg mb-4 italic">Freelancer Web | Fã de Fighting Games</p>
+
+        <hr class="border-t border-white w-1/2 mx-auto mb-6">
+        </hr>
+
+        <!-- Links -->
+        <div class="flex flex-col items-center space-y-4">
+            <a href="https://github.com/LokiiiGo" target="_blank" rel="noopener noreferrer"
+                class="group w-full max-w-xs flex items-center justify-between bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95">
+                <i class="bi bi-github text-2xl"></i>
+                <span class="grow">GitHub</span>
+                <i class="bi bi-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            </a>
+
+            <a href="https://x.com/LokiiiBH" target="_blank" rel="noopener noreferrer"
+                class="group w-full max-w-xs flex items-center justify-between bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95">
+                <i class="bi bi-twitter text-2xl"></i>
+                <span class="grow">Twitter</span>
+                <i class="bi bi-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            </a>
+
+            <a href="https://instagram.com/lokiii.chr" target="_blank" rel="noopener noreferrer"
+                class="group w-full max-w-xs flex items-center justify-between bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95">
+                <i class="bi bi-instagram text-2xl"></i>
+                <span class="grow">Instagram</span>
+                <i class="bi bi-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            </a>
+
+            <a href="https://steamcommunity.com/id/lokiiibh/" target="_blank" rel="noopener noreferrer"
+                class="group w-full max-w-xs flex items-center justify-between bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95">
+                <i class="bi bi-steam text-2xl"></i>
+                <span class="grow">Steam</span>
+                <i class="bi bi-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            </a>
+
+            <button id="lokiiiChr" onclick="copiarTexto()"
+                class="group w-full max-w-xs flex items-center justify-between bg-white/10 backdrop-blur-md text-white cursor-pointer font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95">
+                <i class="bi bi-discord text-2xl"></i>
+                <span class="grow">lokiii.chr</span>
+                <i class="bi bi-clipboard opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            </button>
+        </div>
+
+        <!-- Links da Organização Strawberry Tea -->
+        <p class="font-bold text-white text-lg mb-4 italic mt-10">Strawberry Tea - Organização de Brawlhalla</p>
+
+        <hr class="border-t border-white w-1/2 mx-auto mb-6" />
+
+        <div class="flex flex-col items-center space-y-4">
+            <a href="https://twitter.com/LokiiiGo" target="_blank" rel="noopener noreferrer"
+                class="group w-full max-w-xs flex items-center justify-between bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95">
+                <i class="bi bi-twitter-x text-2xl"></i>
+                <span class="grow">Twitter</span>
+                <i class="bi bi-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            </a>
+
+            <a href="https://discord.gg/dgWWEvJaHd" target="_blank" rel="noopener noreferrer"
+                class="group w-full max-w-xs flex items-center justify-between bg-white/10 backdrop-blur-md text-white font-bold py-4 px-6 rounded-xl border border-white/20 shadow-xl transition-all duration-300 hover:bg-white hover:text-neutral-950 hover:scale-105 active:scale-95">
+                <i class="bi bi-discord text-2xl"></i>
+                <span class="grow">Discord</span>
+                <i class="bi bi-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            </a>
+        </div>
+    </main>
+
+    <!-- Rodapé com script, permitindo que o ano seja automatizado -->
+    <footer class="text-white mt-auto py-6 text-xs tracking-widest uppercase">
+        <script>
+            document.querySelector('footer').innerHTML =
+                `&copy; ${new Date().getFullYear()} - Linktree do Lucas Chambi`;
+        </script>
+    </footer>
 </body>
 
 </html>
