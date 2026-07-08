@@ -19,8 +19,7 @@ Este projeto é uma **landing page estilo Linktree** para reunir links de redes 
 - `index.html` — página principal
 - `css/linktree.css` — estilos customizados (gradiente animado, tipografia e toast)
 - `js/copiarTexto.js` — lógica do botão que copia texto
-- `js/particulas.js` — configuração do particles.js (efeito de partículas)
-- `image/willow-photo.png` — imagem do avatar
+- `image/info-chan.png` — imagem do avatar
 - `README.md` — descrição curta do projeto
 
 ---
@@ -33,11 +32,11 @@ A página carrega:
 - **Google Fonts** (família **Figtree**)
 - **Tailwind CSS via CDN**
 - `./css/linktree.css` (CSS local)
-- `./js/particulas.js` e `./js/copiarTexto.js` (scripts locais)
+- `./js/copiarTexto.js` (script local)
 
 ### 3.2 Corpo (layout)
 A página é centralizada e responsiva, com:
-- Avatar (`./image/willow-photo.png`)
+- Avatar (`./image/info-chan.png`)
 - Título e subtítulo
 - Bloco de links estilo “card”
 - Botão que copia `lokiii.chr` para a área de transferência (toast de feedback)
