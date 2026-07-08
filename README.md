@@ -29,7 +29,7 @@ Este projeto é uma **landing page estilo Linktree** para reunir links de redes 
 ### 3.1 Head (dependências)
 A página carrega:
 - **Bootstrap Icons** (ícones)
-- **Google Fonts** (família **Figtree**)
+- **Google Fonts** (família **google sans**)
 - **Tailwind CSS via CDN**
 - `./css/linktree.css` (CSS local)
 - `./js/copiarTexto.js` (script local)
@@ -48,7 +48,7 @@ A página é centralizada e responsiva, com:
 ## 4. CSS customizado (css/linktree.css)
 
 Principais regras:
-- `.figtree` define a fonte **Figtree** para a página.
+- `.google-sans` define a fonte **google sans** para a página.
 - `.bg-animated` cria um **background em gradiente** com animação contínua.
 - Toast visual para feedback do botão de copiar.
 
