@@ -35,7 +35,7 @@
             line_linked: {
                 enable: true,
                 distance: 140,
-                color: "#7ec8e3",
+                color: "#ffffff",
                 opacity: 0.25,
                 width: 1,
             },
