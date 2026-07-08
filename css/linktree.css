@@ -9,7 +9,7 @@ html {
 
 /* Background com gradiente animado */
 .bg-animated {
-    background: linear-gradient(-45deg, #000000, #a40000, #8a0020);
+    background: linear-gradient(-45deg, #000000, #850000, #8a0020);
     background-size: 400% 400%;
     animation: gradient 20s ease infinite;
 }
