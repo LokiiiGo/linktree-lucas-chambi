@@ -1,7 +1,5 @@
 # Linktree do Lucas Chambi
 
----
-
 ## 1. Visão geral
 Este projeto é uma **landing page estilo Linktree** para reunir links de redes sociais em um único layout. A página é totalmente estática (HTML/CSS/JS), com:
 
