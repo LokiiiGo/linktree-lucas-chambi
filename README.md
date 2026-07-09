@@ -1,7 +1,5 @@
 # Linktree do Lucas Chambi
 
-> Uma página pessoal de redes sociais desenvolvida do zero.
-
 ---
 
 ## 1. Visão geral
