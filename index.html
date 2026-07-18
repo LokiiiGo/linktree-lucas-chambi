@@ -115,8 +115,12 @@
     </main>
 
     <!-- Rodapé: o ano é preenchido automaticamente -->
-    <footer class="text-white mt-auto py-6 text-xs uppercase z-10"></footer>
-    <script src="./js/rodape.js"></script>
+    <footer class="text-white mt-auto py-6 text-xs uppercase z-10">
+        <script>
+            document.querySelector('footer').innerHTML = `
+            & copy; ${new Date().getFullYear()} Linktree do Lucas Chambi.`;
+        </script>
+    </footer>
 </body>
 
 </html>
