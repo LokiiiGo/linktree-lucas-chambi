@@ -14,7 +14,7 @@ Este projeto é uma **landing page estilo Linktree** para reunir links de redes 
 
 - `index.html` — página principal
 - `css/linktree.css` — estilos customizados (gradiente animado, tipografia e toast)
-- `js/copiarTexto.js` — lógica do botão que copia texto
+- `js/copiarTexto.js` — lógica do botão que copia texto e mostrar mensage ao copiar com sucesso
 - `image/info-chan.png` — imagem do avatar
 - `README.md` — descrição curta do projeto
 
@@ -25,14 +25,14 @@ Este projeto é uma **landing page estilo Linktree** para reunir links de redes 
 ### 3.1 Head (dependências)
 A página carrega:
 - **Bootstrap Icons** (ícones)
-- **Google Fonts** (família **google sans**)
+- **Google Fonts** (família **Oswald**)
 - **Tailwind CSS via CDN**
 - `./css/linktree.css` (CSS local)
 - `./js/copiarTexto.js` (script local)
 
 ### 3.2 Corpo (layout)
 A página é centralizada e responsiva, com:
-- Avatar (`./image/info-chan.png`)
+- Avatar (`./image/angry-birds-willow.png`)
 - Título e subtítulo
 - Bloco de links estilo “card”
 - Botão que copia `lokiii.chr` para a área de transferência (toast de feedback)
@@ -44,7 +44,7 @@ A página é centralizada e responsiva, com:
 ## 4. CSS customizado (css/linktree.css)
 
 Principais regras:
-- `.google-sans` define a fonte **google sans** para a página.
+- `.oswald` define a fonte **Oswald** para a página.
 - `.bg-animated` cria um **background em gradiente** com animação contínua.
 - Toast visual para feedback do botão de copiar.
 
