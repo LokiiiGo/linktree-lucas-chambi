@@ -15,7 +15,7 @@ Este projeto é uma **landing page estilo Linktree** para reunir links de redes 
 - `index.html` — página principal
 - `css/linktree.css` — estilos customizados (gradiente animado, tipografia e toast)
 - `js/copiarTexto.js` — lógica do botão que copia texto e mostrar mensage ao copiar com sucesso
-- `image/info-chan.png` — imagem do avatar
+- `image/angry-birds-willow.png` — imagem do avatar
 - `README.md` — descrição curta do projeto
 
 ---
