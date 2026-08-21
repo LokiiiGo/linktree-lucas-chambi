@@ -32,7 +32,7 @@ A página carrega:
 
 ### 3.2 Corpo (layout)
 A página é centralizada e responsiva, com:
-- Avatar (`./image/angry-birds-willow.png`)
+- Avatar (`./image/jaeyun-brawl.png`)
 - Título e subtítulo
 - Bloco de links estilo “card”
 - Botão que copia `lokiii.chr` para a área de transferência (toast de feedback)
