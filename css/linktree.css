@@ -7,12 +7,12 @@
 }
 
 html {
-    scrollbar-color: #00a3b5 black;
+    scrollbar-color: #ffffff black;
 }
 
 /* Background com gradiente animado */
 .bg-animated {
-    background: linear-gradient(-45deg, #000000, #00637c, #008f9f);
+    background: linear-gradient(-45deg, #4f0000, #7d0000);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
@@ -38,7 +38,7 @@ html {
     left: 50%;
     transform: translateX(-50%) translateY(120%);
     background: rgba(255, 255, 255, 0.95);
-    color: #520919;
+    color: #000000;
     font-weight: 700;
     padding: 0.75rem 1.25rem;
     border-radius: 0.75rem;
